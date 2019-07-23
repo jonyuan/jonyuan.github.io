@@ -127,11 +127,7 @@ li {
 }
 
 /* Hide the images by default */
-.mySlides1 {
-  display: none;
-}
-
-.mySlides2 {
+.mySlides1, .mySlides2 {
   display: none;
 }
 
