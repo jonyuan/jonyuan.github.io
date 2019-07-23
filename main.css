@@ -3,42 +3,39 @@ background-color = #008080
 }
 
 .header {
-  padding: 40px; /* some padding */
+  padding: 40px; 
   text-align: center; 
   background: #6D7993;/* #09868b; /* green mountain*/
   color: white; 
 }
 
-/* Increase the font size of the <h1> element */
 .header h1 {
   font-size: 35px;
 }
 
-/* Style the top navigation bar */
 .navbar {
   overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
+  background-color: #333; 
 }
 
-/* Style the navigation bar links */
+
 .navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
   text-decoration: none; /* Remove underline */
 }
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right; /* Float a link to the right */
+  float: right; 
 }
 
-/* Change color on hover/mouse-over */
 .navbar a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black; /* Black text color */
+  background-color: #ddd; 
+  color: black; 
 }
 
 /* Ensure proper sizing */
@@ -52,31 +49,29 @@ background-color = #008080
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
-  flex: 30%; /* Set the width of the sidebar */
-  background-color: #D5D5D5; /*Grey background color */
-  padding: 20px; /* Some padding */
+  flex: 30%; 
+  background-color: #D5D5D5; 
+  padding: 35px; 
 }
 
-/* Main column */
 .main { 
-  flex: 70%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
+  flex: 70%; 
+  background-color: white; 
+  padding: 20px; 
 }
 
 .left_col {
 	flex: 40%;
-	padding: 5px; /* Some padding */
+	padding: 5px; 
+  padding-left: 20px;
 	/*background-color: #f1f1f1;*/
 	font-size: 12px;
 }
 
 .right_col {
 	flex: 40%;
-	padding: 5px; /* Some padding */
+	padding: 5px; 
 	/*background-color: #f1f1f1;*/
 	font-size: 12px;
 }
@@ -101,15 +96,16 @@ body {
 }
 
 .footer {
-  padding: 20px; /* Some padding */
+  padding: 20px; 
   background: #9099A2; /* Grey background */
 }
 
 img {
-    max-width:230px;
-    max-height:230px;
+    max-width:250px;
+    max-height:250px;
     width:auto;
     height:auto;
+    vertical-align: middle;
 }
 
 object {
@@ -119,4 +115,67 @@ object {
 
 li {
   padding: 5px;
+}
+
+/* for slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
