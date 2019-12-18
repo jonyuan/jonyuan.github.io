@@ -43,6 +43,12 @@ background-color = #008080
   box-sizing: border-box;
 }
 
+/* Fix the width of the website */
+.outer {
+  width: 1200px;
+  margin:0px auto 0px auto;
+}
+
 /* Column container */
 .row { 
   display: flex;
